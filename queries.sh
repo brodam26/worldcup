@@ -78,5 +78,6 @@ echo "$($PSQL "SELECT year,name FROM games LEFT JOIN teams ON games.winner_id = 
 
 echo -e "\nList of teams that start with 'Co':"
 echo "$($PSQL "SELECT name FROM teams WHERE name LIKE 'Co%'")"
+echo
 #Colombia
 #Costa Rica
