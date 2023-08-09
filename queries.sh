@@ -21,7 +21,7 @@ echo "$($PSQL "SELECT ROUND(AVG(winner_goals), 2) FROM games")"
 #2.13
 
 echo -e "\nAverage number of goals in all games from both teams:"
-echo "$($PSQL "SELECT AVG(winner_goals)+AVG(opponent_goals) FROM games")"
+echo "$($PSQL "SELECT ROUND(AVG(winner_goals)+AVG(opponent_goals),16) FROM games")"
 #2.8125000000...
 
 echo -e "\nMost goals scored in a single game by one team:"
